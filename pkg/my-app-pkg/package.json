@@ -1,9 +1,14 @@
 {
-  "name": "my-app",
-  "description": "my-app plugin",
+  "name": "my-app-pkg",
+  "description": "my-app-pkg plugin",
   "version": "0.1.0",
   "private": false,
-  "rancher": true,
+  "rancher": {
+    "annotations": {
+      "catalog.cattle.io/rancher-version": ">= 2.10.0",
+      "catalog.cattle.io/ui-extensions-version": ">= 3.0.0 < 4.0.0"
+    }
+  },
   "scripts": {},
   "engines": {
     "node": ">=16"
